@@ -1,0 +1,30 @@
+.pets-container{
+  display: flex;
+  height: 100vh;
+}
+
+.pets-dashboard {
+  margin-top: 40px;   /* espaçamento vertical da navbar superior */
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+  overflow-y: auto;
+}
+
+.pets-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pets-header {
+  margin-bottom: 20px;
+}
+
+.pets-table {
+  background-color: #fff;
+}
+
+.createButton {
+  background-color: #1890ff;
+  border: none;
+}

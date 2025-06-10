@@ -1,0 +1,70 @@
+/* Navbar Header */
+.navbar-header {
+    background-color: #e1f5fe;
+    padding: 0 20px; /* Adicionando espaçamento lateral */
+    display: flex;
+    justify-content: space-between; /* Alinhando os itens de navegação à esquerda e o ícone à direita */
+    align-items: center;
+    height: 64px; /* Garantindo uma altura consistente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para dar um efeito de elevação */
+}
+
+/* Menu da Navbar */
+.navbar-menu {
+    background-color: #e1f5fe;
+    border: none; /* Removendo a borda padrão */
+    box-shadow: none; /* Garantindo que não haja sombra extra */
+    display: flex; /* Garante que o menu utilize toda a largura disponível */
+    flex-wrap: nowrap; /* Impede que o menu quebre para a próxima linha */
+    justify-content: flex-start; /* Alinha os itens do menu à esquerda */
+}
+
+.navbar-menu .ant-menu-item {
+    font-size: 16px; /* Ajuste no tamanho da fonte */
+    font-weight: 500; /* Um pouco de negrito para tornar os itens mais visíveis */
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    overflow: hidden; /* Garante que o conteúdo não seja cortado */
+    text-overflow: ellipsis; /* Se o texto não caber, ele será truncado com "..." */
+    flex-grow: 1; /* Distribui igualmente o espaço entre os itens */
+    text-align: center; /* Centraliza o texto */
+}
+
+.navbar-menu .ant-menu-item-selected {
+    background-color: #b3e5fc; /* Cor de fundo mais suave para o item selecionado */
+}
+
+/* Hover Effect nos itens do Menu */
+.navbar-menu .ant-menu-item:hover {
+    background-color: #b3e5fc; /* Altera a cor ao passar o mouse */
+    color: #0d47a1; /* Muda a cor do texto para um tom mais escuro */
+}
+
+/* Estilo para o Dropdown (Avatar) */
+.navbar-header .ant-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    padding-right: 16px; /* Espaço para o avatar */
+    cursor: pointer;
+    justify-content: flex-end; /* Alinha o avatar à direita */
+}
+
+.navbar-header .ant-avatar {
+    background-color: #1890ff;
+    cursor: pointer;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+    .navbar-menu {
+        font-size: 14px; /* Reduzindo o tamanho da fonte para telas pequenas */
+    }
+    
+    .navbar-header {
+        padding: 0 10px; /* Menos padding em dispositivos móveis */
+        height: 56px; /* Diminuindo a altura da navbar */
+    }
+
+    .navbar-menu .ant-menu-item {
+        padding: 0 10px; /* Ajustando o padding para itens do menu */
+    }
+}
