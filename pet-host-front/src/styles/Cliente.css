@@ -1,0 +1,39 @@
+.clientes-container{
+    display: flex;
+    height: 100vh;
+}
+.clientes-dashboard {
+    margin-top: 40px;   /* espaçamento vertical da navbar superior */
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+  }
+  
+  .clientes-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .clientes-table {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .createButton {
+    background-color: #1890ff;
+    color: white;
+  }
+  
+  .clientes-header {
+    margin-bottom: 20px;
+  }
+  
+  .tableContainer {
+    margin-top: 20px;
+  }
+  
